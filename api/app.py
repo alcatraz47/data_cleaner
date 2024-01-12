@@ -20,7 +20,7 @@ def main():
         type=["csv", "xlsx"]
     )
 
-    if st.session_state["file_object"] is not None:
+    if st.button("Upload") and st.session_state["file_object"] is not None:
         with st.spinner("Processing Your File"):
             df = read_file(file_object=st.session_state["file_object"])
             st.write(df.head())
