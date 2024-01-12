@@ -2,3 +2,6 @@ numpy
 pandas
 openpyxl
 spacy
+nltk
+streamlit
+xlsx2csv
