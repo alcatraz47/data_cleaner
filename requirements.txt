@@ -5,3 +5,4 @@ spacy
 nltk
 streamlit
 xlsx2csv
+python-magic
