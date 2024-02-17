@@ -34,8 +34,8 @@ def keep_alphanumeric(sentence: str) -> list:
     Returns:
         list: list of words.
     """
-    pattern = re.compile(r"[A-Za-z]+")
-    return re.findall(pattern=pattern, string=sentence)
+    pattern = re.compile(r"[^\w\s]")
+    return re.sub(pattern=pattern, repl="", string=sentence).split()
 
 def change_case(word_list: list, case: str="lower") -> list:
     """case changing of all contents in each list
